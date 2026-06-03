@@ -189,8 +189,6 @@ function Model:mix()
             end
         end
     until #self:_findMatches() == 0
-    -- ⚠️ Для прототипа: не гарантируем наличие ходов,
-    -- но архитектура позволяет добавить проверку hasValidMoves()
 end
 
 function Model:dump()
@@ -204,7 +202,7 @@ function Model:dump()
     end
     io.write("\n")
     
-    -- Строки поля
+
     for y = 0, self.height - 1 do
         io.write(y .. "|")
         for x = 0, self.width - 1 do
