@@ -1,3 +1,4 @@
+package.path = package.path .. ";./?.lua"
 
 local Config = require("config")
 local Model = require("model")
